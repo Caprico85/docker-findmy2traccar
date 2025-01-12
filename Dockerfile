@@ -4,7 +4,7 @@ USER root
 
 RUN \
     cd /root/ && \
-    git clone https://github.com/biemster/FindMy.git && \
+    /usr/bin/git clone https://github.com/biemster/FindMy.git && \
     wget https://raw.githubusercontent.com/ct-Open-Source/findmy2traccar/refs/heads/main/findmy2traccar.py -O /root/FindMy/findmy2traccar.py
 
 CMD python3 /root/FindMy/findmy2traccar.py
