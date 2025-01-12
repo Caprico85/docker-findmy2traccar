@@ -3,7 +3,7 @@ FROM python:alpine
 USER root
 
 RUN \
-    cd /root/
+    cd /root/ &&
     git clone https://github.com/biemster/FindMy.git &&
     cd FindMy/ &&
     wget https://raw.githubusercontent.com/ct-Open-Source/findmy2traccar/refs/heads/main/findmy2traccar.py -O /root/FindMy/findmy2traccar.py
