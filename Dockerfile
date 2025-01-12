@@ -3,6 +3,7 @@ FROM python:alpine
 USER root
 
 RUN \
+    apk add --no-cache git &&
     cd /root/ &&
     git clone https://github.com/biemster/FindMy.git &&
     cd FindMy/ &&
