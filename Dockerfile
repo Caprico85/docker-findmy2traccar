@@ -12,4 +12,5 @@ RUN \
 
 WORKDIR /app
 
-CMD python /app/findmy2traccar.py
+ENTRYPOINT ["python", "/app/findmy2traccar.py"]
+
