@@ -12,4 +12,4 @@ RUN \
 
 WORKDIR /app
 
-CMD python3 /root/FindMy/findmy2traccar.py
+CMD python /app/findmy2traccar.py
